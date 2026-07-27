@@ -14,7 +14,6 @@ The original 30-feeder case used for the manuscript's field-data validation was 
 | Substations | 5 |
 | Radial feeders | 30 |
 | Feeder nodes | 236 |
-| Mean nodes per feeder | 7.867 |
 | Feeder-internal branches | 206 |
 | Substation-to-feeder source connectors | 30 |
 | Nodes with renewable generation | 42 |
