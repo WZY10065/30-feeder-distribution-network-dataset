@@ -79,7 +79,7 @@ For a complete reproduction of Table IV, a companion pair-level results file sho
 - the two feeder identifiers and their fixed interconnection nodes;
 - the baseline RHC and the RHC after enabling the candidate SOP link;
 - the common SOP capacity, investment constraint, operating constraints, and time-series inputs;
-- the numerical rule and threshold used to assign the positive or negative label; and
+- the numerical rule and threshold used to assign the positive or negative label;
 - the ISTCD, Pearson-correlation, mutual-information, and Euclidean-distance scores used for comparison.
 
 The similarity measures must not be used to construct the ground-truth labels. The labels must be obtained independently by solving the full RHC optimization model under the same settings for all 435 feeder pairs.
