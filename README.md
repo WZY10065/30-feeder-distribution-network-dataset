@@ -1,8 +1,8 @@
-# Anonymized Reconstructed 30-Feeder Distribution Network Dataset
+# 30-Feeder Distribution Network Dataset
 
 ## Overview
 
-This release provides the topology, electrical parameters, node-level load and renewable-generation data, and fixed candidate interconnection points of an anonymized reconstructed 30-feeder distribution network. The data are consolidated in `30_feeder_complete_dataset.xlsx`.
+This release provides the topology, electrical parameters, node-level load and renewable-generation data, and fixed candidate interconnection points of a 30-feeder distribution network. The data are consolidated in `30_feeder_complete_dataset.xlsx`.
 
 The original 30-feeder case used for the manuscript's field-data validation was obtained from an urban distribution network in southern China. Its original topology and measurements cannot be released under the utility confidentiality agreement. The workbook in this repository is a nonconfidential reconstruction consistent with the disclosed scale and structure of that field case; it is not the utility's original network or original measurements.
 
@@ -11,7 +11,7 @@ The original 30-feeder case used for the manuscript's field-data validation was 
 | Item | Value |
 |---|---:|
 | Nominal voltage | 10 kV |
-| Anonymized substations | 5 |
+| Substations | 5 |
 | Radial feeders | 30 |
 | Feeder nodes | 236 |
 | Mean nodes per feeder | 7.867 |
@@ -31,7 +31,7 @@ The `x` and `y` fields are schematic coordinates used to draw the network. They 
 |---|---:|---|
 | `Overview` | - | Dataset scale and workbook contents. |
 | `Data Dictionary` | - | Field definitions, data types, and units. |
-| `Substations` | 5 | Anonymized substations and schematic coordinates. |
+| `Substations` | 5 | Substations and schematic coordinates. |
 | `Feeders` | 30 | Feeder roots, fixed tie nodes, topology counts, load totals, renewable totals, and 40-node selection flags. |
 | `Nodes` | 236 | Node attributes, load parameters, renewable parameters, schematic coordinates, and selection flags. |
 | `Node Averages` | 236 | Mean load and mean renewable output for each node. |
