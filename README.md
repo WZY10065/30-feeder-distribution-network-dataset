@@ -20,7 +20,6 @@ The original 30-feeder case used for the manuscript's field-data validation was 
 | Fixed candidate interconnection points | 30 |
 | Time steps per node | 24 |
 | Node-hour profile records | 5,664 |
-| SOP candidate links in the 40-node subset | 3 |
 
 The `x` and `y` fields are schematic coordinates used to draw the network. They are not geographic coordinates and cannot be used to identify the real utility system.
 
@@ -37,7 +36,6 @@ The `x` and `y` fields are schematic coordinates used to draw the network. They 
 | `Node Profiles 24h` | 5,664 | Hourly active load and renewable output for every node. |
 | `Branches` | 236 | Source connectors and feeder-internal branch parameters. |
 | `Tie Points` | 30 | One fixed candidate interconnection point for each feeder. |
-| `SOP Candidates` | 3 | SOP candidate links in the selected 40-node subset. |
 
 Each data worksheet is a flat table. Identifiers such as `substation_id`, `feeder_id`, and `node_id` link the tables. Missing identifiers are represented by blank cells.
 
