@@ -6,7 +6,7 @@
 
 ## Overview
 
-This repository provides the publicly available 30-feeder distribution-network data and interactive topology viewer used to support the feeder-pair screening and 40-bus case studies in the accompanying manuscript [1]. This release provides the topology, electrical parameters, node-level load and renewable-generation data, and fixed candidate interconnection points of a 30-feeder distribution network. The data are consolidated in `30_feeder_complete_dataset.xlsx`.
+This repository provides the publicly available 30-feeder distribution-network data and interactive topology viewer used to support the feeder-pair screening and 40-bus case studies in the manuscript [1]. This release provides the topology, electrical parameters, node-level load and renewable-generation data, and fixed candidate interconnection points of a 30-feeder distribution network. The data are consolidated in `30_feeder_complete_dataset.xlsx`.
 
 The source case was obtained from a 10 kV urban distribution network in southern China. To comply with the utility confidentiality agreement, this public release does not contain identifiable geographic information, the utility's original topology, or original measurements.
 
