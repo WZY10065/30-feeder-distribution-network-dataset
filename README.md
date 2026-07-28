@@ -1,8 +1,12 @@
 # 30-Feeder Distribution Network Dataset
 
+## Reference
+
+[1] Y. Wu, T. Yu, and Z. Wang, “Spatio-Temporal Complementarity-Driven Planning for Cost-Effective Renewable Hosting Capacity Enhancement in Flexible Power Distribution Networks,” International Journal of Electrical Power & Energy Systems, 2026.
+
 ## Overview
 
-This release provides the topology, electrical parameters, node-level load and renewable-generation data, and fixed candidate interconnection points of a 30-feeder distribution network. The data are consolidated in `30_feeder_complete_dataset.xlsx`.
+This repository provides the publicly available 30-feeder distribution-network data and interactive topology viewer used to support the feeder-pair screening and 40-bus case studies in the accompanying manuscript [1]. This release provides the topology, electrical parameters, node-level load and renewable-generation data, and fixed candidate interconnection points of a 30-feeder distribution network. The data are consolidated in `30_feeder_complete_dataset.xlsx`.
 
 The source case was obtained from a 10 kV urban distribution network in southern China. To comply with the utility confidentiality agreement, this public release does not contain identifiable geographic information, the utility's original topology, or original measurements.
 
@@ -81,17 +85,6 @@ Four feeders form the 40-node case used elsewhere in the manuscript:
 
 The `selected_for_40_bus_case` and `is_40_bus` fields identify this subset. The `SOP Candidates` worksheet lists its three candidate SOP links.
 
-## Relation to the Table IV Pairwise Experiment
-
-This workbook documents the public test-system inputs. It does not contain the confidential field-network outputs from the 435 full RHC optimizations, the original pair labels, or the reported split of 20 positive and 415 negative feeder pairs.
-
-For a complete reproduction of Table IV, a companion pair-level results file should report, for every unordered feeder pair:
-
-- the two feeder identifiers and their fixed interconnection nodes;
-- the baseline RHC and the RHC after enabling the candidate SOP link;
-- the common SOP capacity, investment constraint, operating constraints, and time-series inputs;
-- the numerical rule and threshold used to assign the positive or negative label; and
-- the ISTCD, Pearson-correlation, mutual-information, and Euclidean-distance scores used for comparison.
 
 The similarity measures must not be used to construct the ground-truth labels. The labels must be obtained independently by solving the full RHC optimization model under the same settings for all 435 feeder pairs.
 
