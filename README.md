@@ -61,16 +61,6 @@ Each data worksheet is a flat table. Identifiers such as `substation_id`, `feede
 
 The `Nodes` worksheet contains the peak and 24-hour mean active load of each node, its load category, renewable technology, reference renewable capacity, and renewable-capacity upper bound. The `Node Profiles 24h` worksheet contains `load_mw` and `renewable_mw` for hours 1-24.
 
-The workbook distinguishes the displayed physical-scale load values from the values used by the planning model:
-
-```text
-model_peak_load_mw = peak_load_mw x optimization_load_scale
-model_mean_load_mw = mean_load_mw x optimization_load_scale
-optimization_load_scale = 0.1
-```
-
-Power and capacity values are reported in MW or MVA, voltage in kV, line length in km, and branch resistance and reactance in ohm.
-
 ## Fixed Interconnection Points
 
 One candidate interconnection point is fixed for each feeder and recorded in the `Tie Points` worksheet. In this public dataset, the selected point is a terminal node of the corresponding radial feeder. This assignment provides a common connection rule for evaluating the 30 x 29 / 2 = 435 unordered feeder pairs. It does not disclose the confidential utility's original interconnection-point locations.
