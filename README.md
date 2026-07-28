@@ -4,7 +4,7 @@
 
 This release provides the topology, electrical parameters, node-level load and renewable-generation data, and fixed candidate interconnection points of a 30-feeder distribution network. The data are consolidated in `30_feeder_complete_dataset.xlsx`.
 
-The original 30-feeder case used for the manuscript's field-data validation was obtained from an urban distribution network in southern China. Its original topology and measurements cannot be released under the utility confidentiality agreement. The workbook in this repository is a nonconfidential reconstruction consistent with the disclosed scale and structure of that field case; it is not the utility's original network or original measurements.
+The source case was obtained from a 10 kV urban distribution network in southern China. To comply with the utility confidentiality agreement, this public release does not contain identifiable geographic information, the utility's original topology, or original measurements.
 
 ## System Summary
 
@@ -14,14 +14,24 @@ The original 30-feeder case used for the manuscript's field-data validation was 
 | Substations | 5 |
 | Radial feeders | 30 |
 | Feeder nodes | 236 |
+| Mean nodes per feeder | 7.867 |
 | Feeder-internal branches | 206 |
 | Substation-to-feeder source connectors | 30 |
 | Nodes with renewable generation | 42 |
 | Fixed candidate interconnection points | 30 |
 | Time steps per node | 24 |
 | Node-hour profile records | 5,664 |
+| SOP candidate links in the 40-node subset | 3 |
 
 The `x` and `y` fields are schematic coordinates used to draw the network. They are not geographic coordinates and cannot be used to identify the real utility system.
+
+## Interactive Network Viewer
+
+The interactive 30-feeder topology viewer is available at:
+
+https://wzy10065.github.io/30-feeder-distribution-network-dataset/
+
+The viewer supports node-ID, mean-load, and mean-renewable labels; highlighting of the four feeders that form the 40-bus case; display of SOP candidate links and fixed candidate interconnection points; and node-level 24-hour load and renewable-output profiles.
 
 ## Workbook Contents
 
@@ -36,6 +46,7 @@ The `x` and `y` fields are schematic coordinates used to draw the network. They 
 | `Node Profiles 24h` | 5,664 | Hourly active load and renewable output for every node. |
 | `Branches` | 236 | Source connectors and feeder-internal branch parameters. |
 | `Tie Points` | 30 | One fixed candidate interconnection point for each feeder. |
+| `SOP Candidates` | 3 | SOP candidate links in the selected 40-node subset. |
 
 Each data worksheet is a flat table. Identifiers such as `substation_id`, `feeder_id`, and `node_id` link the tables. Missing identifiers are represented by blank cells.
 
@@ -55,7 +66,7 @@ Power and capacity values are reported in MW or MVA, voltage in kV, line length 
 
 ## Fixed Interconnection Points
 
-One candidate interconnection point is fixed for each feeder and recorded in the `Tie Points` worksheet. In this public reconstruction, the selected point is a terminal node of the corresponding radial feeder. This assignment provides a common connection rule for evaluating the 30 x 29 / 2 = 435 unordered feeder pairs. It does not disclose or reproduce the confidential utility's original interconnection-point locations.
+One candidate interconnection point is fixed for each feeder and recorded in the `Tie Points` worksheet. In this public dataset, the selected point is a terminal node of the corresponding radial feeder. This assignment provides a common connection rule for evaluating the 30 x 29 / 2 = 435 unordered feeder pairs. It does not disclose the confidential utility's original interconnection-point locations.
 
 ## Selected 40-Node Subset
 
@@ -79,9 +90,9 @@ For a complete reproduction of Table IV, a companion pair-level results file sho
 - the two feeder identifiers and their fixed interconnection nodes;
 - the baseline RHC and the RHC after enabling the candidate SOP link;
 - the common SOP capacity, investment constraint, operating constraints, and time-series inputs;
-- the numerical rule and threshold used to assign the positive or negative label;
+- the numerical rule and threshold used to assign the positive or negative label; and
 - the ISTCD, Pearson-correlation, mutual-information, and Euclidean-distance scores used for comparison.
 
 The similarity measures must not be used to construct the ground-truth labels. The labels must be obtained independently by solving the full RHC optimization model under the same settings for all 435 feeder pairs.
 
-The reported 20/415 label split must not be attributed to this reconstructed workbook unless all 435 optimizations are rerun using these released inputs and the resulting pair-level outputs are added to the public release.
+The reported 20/415 label split must not be attributed to this public workbook unless all 435 optimizations are rerun using these released inputs and the resulting pair-level outputs are added to the public release.
