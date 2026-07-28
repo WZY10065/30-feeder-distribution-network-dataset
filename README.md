@@ -10,6 +10,8 @@ This repository provides the publicly available 30-feeder distribution-network d
 
 The source case was obtained from a 10 kV urban distribution network in southern China. To comply with the utility confidentiality agreement, this public release does not contain identifiable geographic information, the utility's original topology, or original measurements.
 
+<img width="2552" height="1274" alt="image" src="https://github.com/user-attachments/assets/6e1486bc-3c78-47fa-8f4a-7d2d203b92d1" />
+
 ## System Summary
 
 | Item | Value |
