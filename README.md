@@ -1,4 +1,4 @@
-<img width="2552" height="1218" alt="image" src="https://github.com/user-attachments/assets/76be654c-4279-4982-8a84-b59bc6e2d8ba" /># 30-Feeder Distribution Network Dataset
+# 30-Feeder Distribution Network Dataset
 
 ## Reference
 
