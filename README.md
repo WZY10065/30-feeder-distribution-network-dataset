@@ -86,9 +86,3 @@ Four feeders form the 40-node case used elsewhere in the manuscript:
 | `F19` | 11 | `N028` |
 | `F27` | 12 | `N040` |
 
-The `selected_for_40_bus_case` and `is_40_bus` fields identify this subset. The `SOP Candidates` worksheet lists its three candidate SOP links.
-
-
-The similarity measures must not be used to construct the ground-truth labels. The labels must be obtained independently by solving the full RHC optimization model under the same settings for all 435 feeder pairs.
-
-The reported 20/415 label split must not be attributed to this public workbook unless all 435 optimizations are rerun using these released inputs and the resulting pair-level outputs are added to the public release.
